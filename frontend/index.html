@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Downloader de Vídeos e Áudios</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main class="container">
+    <h1>Downloader de Vídeos e Áudios</h1>
+    <form id="downloadForm" class="glass">
+      <label for="urlInput">URL do vídeo</label>
+      <input type="url" id="urlInput" name="url" placeholder="https://..." required />
+
+      <fieldset>
+        <legend>Formato</legend>
+        <label>
+          <input type="radio" name="format" value="video" checked /> Vídeo
+        </label>
+        <label>
+          <input type="radio" name="format" value="audio" /> Áudio
+        </label>
+      </fieldset>
+
+      <label for="qualitySelect">Qualidade</label>
+      <select id="qualitySelect" name="quality">
+        <option value="1080">1080p</option>
+        <option value="720" selected>720p</option>
+        <option value="480">480p</option>
+        <option value="360">360p</option>
+        <option value="audio">Áudio (melhor)</option>
+      </select>
+
+      <button type="submit" class="btn-primary">Baixar</button>
+    </form>
+    <div id="status" class="status"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
