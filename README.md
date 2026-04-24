@@ -50,6 +50,4 @@ Ao iniciar o servidor, ele exibirá dois endereços no console:
 - **Porta padrão:** 3000.
 - **Acesso Externo:** Habilitado para `0.0.0.0`.
 
----
-**Desenvolvido com excelência pela sua equipe autônoma de desenvolvimento.**
 #
